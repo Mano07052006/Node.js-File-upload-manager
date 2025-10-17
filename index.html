@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduFile Manager | Learn & Upload</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #74ABE2, #5563DE);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: #f0f0f0;
+        margin-top: 10px;
+      }
+
+      #root {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 500px;
+        min-height: 200px;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 15px;
+        font-size: 0.9em;
+        opacity: 0.9;
+      }
+
+      .loader {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #fff;
+        border-top: 5px solid #74ABE2;
+        border-radius: 50%;
+        animation: spin 1.2s linear infinite;
+        margin: 40px auto;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>File Upload Manager 📚</h1>
+      <p>Upload and manage your academic files securely</p>
+    </header>
+
+    <!-- React app root -->
+    <div id="root">
+      <div class="loader"></div>
+      <p style="text-align:center; margin-top:10px;">Loading interactive app...</p>
+    </div>
+
+    <footer>
+      &copy; 2025 EduFile Manager | Empowering Learning Through Technology
+    </footer>
+  </body>
+</html>
+
+
